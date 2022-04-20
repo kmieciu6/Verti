@@ -1,0 +1,82 @@
+footer {
+  padding: 40px;
+
+  .footer__menu {
+    padding: 20px 0 40px;
+    border-bottom: 1px solid $color-text;
+
+    @include sm {
+      border: none;
+    }
+
+    @include md {
+      padding: 0 10px;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      padding: 30px 0;
+    }
+
+    a {
+      display: block;
+      font-weight: 300;
+      color: $color-text;
+      padding: 5px 0;
+      font-size: 0.875rem;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .contact__icons {
+      display: flex;
+      padding-bottom: 20px;
+
+      .contact__icon {
+        width: 40px;
+        height: 40px;
+        background: $color-text;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin-right: 8px;
+        text-decoration: none;
+
+        i {
+          color: white;
+          font-size: 1.375rem;
+        }
+      }
+    }
+
+    p {
+      font-weight: 300;
+      padding: 10px 0;
+    }
+  }
+
+  .copyright {
+    padding: 20px 0;
+
+    p {
+      padding: 10px 0;
+      font-weight: 300;
+
+      a {
+        color: $color-text;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    @include sm {
+      text-align: center;
+    }
+  }
+}
